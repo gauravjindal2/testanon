@@ -1,0 +1,28 @@
+---
+appId:
+  iOS: 926955591
+
+acceptLanguage: en
+cron:
+  time: '0 * * * *'
+  timeZone: Europe/Berlin
+
+firstTimeIgnore: true
+outputs: 3
+
+slack:
+  use: true
+  webhook: https://hooks.slack.com/services/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
+  channel: test_reviews
+
+email:
+  use: false
+  smtp:
+    host: smtp.gmail.com
+    port: 465
+    ssl: true
+    auth:
+      user: 'username@gmail.com'
+      pass: 'userpassword'
+  from: 'sendFrom@mail.com'
+  to: 'sendTo@mail.com'
